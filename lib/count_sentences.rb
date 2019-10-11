@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    counted= self.split('. ')
+    counted= self.split(/\.|\?|!/).length
     counted.size
     #binding.pry
   end
